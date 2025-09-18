@@ -1,0 +1,57 @@
+/**
+ * @name MoutonDiscord
+ * @author MoutonDemocrate
+ * @authorLink https://github.com/MoutonDemocrate
+ * @description A bunch of tweaks to the Discord UI.
+ * @license the Unlicense
+ * @version 1.0
+ * @source https://github.com/Saltssaumure/pios-discord-theme
+ * @donate https://ko-fi.com/saltssaumure
+*/
+
+/* REMOVE TOP BAR */
+
+.bar_c38106 {
+    /* Top bar */
+    display: none !important;
+    height: 0px !important;
+    background: var(--background) !important;
+
+
+
+
+    .title_c38106 {
+        content: "easter egg :)" !important;
+
+
+        .text-sm/medium_cf4812 {
+            display: none !important;
+            content: none;
+        }
+    }
+}
+
+.content_c48ade {
+    margin: none !important;
+    height: 100%;
+}
+
+.base_c48ade {
+    display: grid;
+    grid-template-rows:
+        [top] 0px [titleBarEnd] 0px [noticeEnd] 100% [end] 0px !important;
+}
+
+/* REMOVE QUESTS BUTTON */
+.scroller__99e7c {
+    ul {
+
+        /* Genuinely did not find a prettier way to put this */
+        *:nth-child(7),
+        *:nth-child(6),
+        *:nth-child(4),
+        *:nth-child(5) {
+            display: none;
+        }
+    }
+}
