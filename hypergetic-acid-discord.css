@@ -119,19 +119,20 @@ h3 {
     border-color: var(--light) !important;
 
     rect {
-        fill:var(--light);
+        fill: var(--light);
     }
 
     path {
         fill: var(--background);
     }
 }
+
 .checked__6f89e {
     background-color: var(--accent) !important;
     border-color: transparent !important;
 
     rect {
-        fill:black;
+        fill: black;
     }
 
     path {
@@ -331,10 +332,19 @@ h3 {
         }
     }
 
-    .embed__623de {
+    .inlineMediaEmbed__623de {
+        background-color: transparent !important;
+    }
+
+    .imageContent__0f481 {
+        background-color: transparent !important;
+    }
+
+    .embedFull__623de {
         /* EMBEDS */
         background-color: var(--mid);
     }
+
 }
 
 .avatar_c19a55 .avatar__07f91 {
