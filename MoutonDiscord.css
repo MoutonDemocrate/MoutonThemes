@@ -11,47 +11,55 @@
 
 /* REMOVE TOP BAR */
 
-.bar_c38106 {
-    /* Top bar */
-    display: none !important;
-    height: 0px !important;
-    background: var(--background) !important;
+.base__5e434 {
+
+    display: grid;
+    grid-template-rows:
+        [top] 0px [titleBarEnd] 0px [noticeEnd] 100% [end] 0px !important;
+
+    .bar_c38106 {
+        /* Top bar */
+        display: none !important;
+        height: 0px !important;
+        background: var(--background) !important;
 
 
 
 
-    .title_c38106 {
-        content: "easter egg :)" !important;
+        .title_c38106 {
+            content: "easter egg :)" !important;
 
 
-        .text-sm/medium_cf4812 {
-            display: none !important;
-            content: none;
+            .text-sm/medium_cf4812 {
+                display: none !important;
+                content: none;
+            }
         }
     }
 }
+
 
 .content_c48ade {
     margin: none !important;
     height: 100%;
 }
 
-.base_c48ade {
-    display: grid;
-    grid-template-rows:
-        [top] 0px [titleBarEnd] 0px [noticeEnd] 100% [end] 0px !important;
+/* REMOVE QUESTS BUTTON */
+/* Genuinely did not find a prettier way to put this */
+.content_d125d2> :nth-child(7):not(.dm__972a0):not(.peopleListItem_cc6179):not(.member__5d473):not(.membersGroup_c8ffbb),
+.content_d125d2> :nth-child(6):not(.dm__972a0):not(.peopleListItem_cc6179):not(.member__5d473):not(.membersGroup_c8ffbb),
+.content_d125d2> :nth-child(4):not(.dm__972a0):not(.peopleListItem_cc6179):not(.member__5d473):not(.membersGroup_c8ffbb),
+.content_d125d2> :nth-child(5):not(.dm__972a0):not(.peopleListItem_cc6179):not(.member__5d473):not(.membersGroup_c8ffbb) {
+    background-color: red !important;
+    display: none;
 }
 
-/* REMOVE QUESTS BUTTON */
-.scroller__99e7c {
-    ul {
+/* PLACE TEXT BAR LOWER */
+.channelBottomBarArea_f75fb0 {
 
-        /* Genuinely did not find a prettier way to put this */
-        *:nth-child(7),
-        *:nth-child(6),
-        *:nth-child(4),
-        *:nth-child(5) {
-            display: none;
-        }
+    margin-bottom: 8px !important;
+
+    .channelTextArea_f75fb0 {
+        margin-bottom: 0px !important;
     }
 }

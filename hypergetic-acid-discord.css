@@ -234,6 +234,12 @@ h3 {
     /* Panels */
     background-color: var(--dark) !important;
     border-color: var(--accent);
+
+    .rtcConnectionStatusLabel__06d62 {
+        div {
+            color: var(--accent);
+        }
+    }
 }
 
 .panels_c48ade:after {
